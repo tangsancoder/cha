@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="lloggo.png">
+
+
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Small fixed logo box on left, moved lower -->
+  <div class="fixed top-28 left-6 w-24 h-24 bg-white bg-opacity-90 rounded-lg flex items-center justify-center shadow-lg z-50 overflow-hidden">
+    <img src="lloggo.png" alt="Logo" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Navbar -->
+ <header class="flex justify-between items-center px-6 py-4 shadow-md  bg-gray-300">
+  <!-- Logo with Image -->
+  <div class="text-3xl font-bold text-black italic tracking-wide">
+    <img src="logo.png" alt="Ryan's Logo" class="h-12 md:h-16 object-contain" />
+  </div>
+  <nav class="space-x-6 text-base font-medium text-gray-800">
+    <a href="index.html" class="text-black  hover:text-purple-600">Home</a>
+    <a href="about me.html" class=" text-black hover:text-purple-600">About me</a>
+    <a href="snu.html" class=" hover:text-purple-600">About SNu</a>
+    <a href="village.html" class=" hover:text-purple-600">Degmada</a>
+  </nav>
+<button 
+  onclick="window.location.href='contact.html'" 
+  class="border-2 border-purple-600 text-purple-600 px-4 py-1 rounded-full hover:bg-purple-600 hover:text-white transition">
+  Contact Me
+</button>
+
+</header>
+
+
+<!-- Contact Section -->
+<section class="bg-pink-700 text-white py-12" style="background-image: url('con.jpg'); background-size: cover; background-position: center;">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- Left Side: Contact Info -->
+    <div>
+      <h2 class="text-3xl font-bold mb-4">Let's Connect :</h2>
+      <p class="text-lg leading-relaxed mb-8">
+        I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hi, feel free to reach out. I'm always open to creative ideas and meaningful conversations.
+      </p>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🏠</span>
+          <p class="text-base">Mogadishu - Somalia</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">📞</span>
+          <p class="text-base">+25261**********</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">✉️</span>
+          <p class="text-base">ryan@example.com</p>
+        </div>
+      </div>
+
+      <hr class="my-6 border-white/30">
+
+      <!-- Social Icons -->
+      <p class="font-semibold mb-3">Follow us</p>
+      <div class="flex gap-4 text-2xl">
+        <a href="#" class="hover:text-gray-300">🌐</a>
+        <a href="#" class="hover:text-gray-300">🐦</a>
+        <a href="#" class="hover:text-gray-300">📸</a>
+        <a href="#" class="hover:text-gray-300">▶️</a>
+      </div>
+    </div>
+
+    <!-- Right Side: Form -->
+    <div class="bg-white rounded-xl p-8 shadow-lg">
+      <h3 class="text-xl font-semibold text-gray-800 mb-6">Send message:</h3>
+      <form class="space-y-5">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Full name:</label>
+          <input type="text" class="w-full border-b border-gray-300 focus:outline-none focus:border-pink-700 p-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Email:</label>
+          <input type="email" class="w-full border-b border-gray-300 focus:outline-none focus:border-pink-700 p-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">Text your message:</label>
+          <textarea rows="3" class="w-full border-b border-gray-300 focus:outline-none focus:border-pink-700 p-2" required></textarea>
+        </div>
+        <button type="submit" class="bg-purple-700 hover:bg-pink-800 text-white px-6 py-2 rounded-md transition">
+          Send
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+ <!-- Footer -->
+  <footer class="bg-gray-100 p-6">
+    <div class="flex justify-between items-center flex-wrap">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <img src="logo.png" alt="Logo" class="w-32" />
+      </div>
+      <!-- Menu -->
+      <div class="flex-grow text-center">
+        <ul class="flex justify-center space-x-6">
+          <li><a href="#" class="text-black hover:text-purple-700">Home</a></li>
+          <li><a href="#" class="text-black hover:text-purple-700">About Me</a></li>
+          <li><a href="#" class="text-black hover:text-purple-700">About SNU</a></li>
+          <li><a href="#" class="text-black hover:text-purple-700">About Village</a></li>
+          <li><a href="#" class="text-black hover:text-purple-700">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Social -->
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#"><img src="facebook.jpg" alt="Facebook" class="w-6 h-6" /></a>
+        <a href="#"><img src="twitter.jpg" alt="Twitter" class="w-6 h-6" /></a>
+        <a href="#"><img src="inst.jpg" alt="Instagram" class="w-6 h-6" /></a>
+        <a href="#"><img src="idn.jpg" alt="LinkedIn" class="w-6 h-6" /></a>
+      </div>
+    </div>
+
+    <hr class="my-6 border-black" />
+
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm text-gray-700">Made with 💜 by Ryan</p>
+      <p class="text-sm text-gray-700 mt-2 md:mt-0">© All Rights Reserved | Ryan Cashara</p>
+      <p class="text-sm text-gray-700 mt-2 md:mt-0">
+        <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Cookies</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
