@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8</title>
+    <!---link icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="chap8.css">
+</head>
+<body>
+    <!-- Main navigation for jumping between practice sections -->
+<header>
+    <nav class="main-nav">
+         <!-- <div class="dropdown">
+            <button class="dropbtn">Practice 7.1 <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#practice7p1">Box 1 (first and second)</a>
+                <a href="#practice7p2">Box 2(outer and inner)</a>
+            </div>
+        </div> -->
+        <a href="#practice1">Practice 8.1</a>
+        <a href="#practice2">Practice 8.2</a>
+         <div class="dropdown">
+            <button class="dropbtn">Practice 8.3 <i class="fas fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#practice3a">option a </a>
+                <a href="#practice3b">option b</a>
+            </div>
+        </div>
+        <a href="#practice4">Practice 8.4</a>
+        <div class="dropdown">
+           <button class="dropbtn">Practice 8.5 <i class="fas fa-caret-down"></i></button>
+           <div class="dropdown-content">
+               <a href="#practice5a">flex</a>
+               <a href="#practice5b">grid</a>
+           </div>
+       </div>
+        <a href="chapter8two.html" class="back-button" style="border: 2px solid #000;">Next
+    <i class="fas fa-arrow-right"></i> 
+</a>
+    </nav>
+</header>
+<!--section practice 8.1-->
+<section id="practice1" class="practice-section">
+    <h2 style="text-align: center;">Practice 8.1</h2>
+     <header>
+    <h1>Flexbox Gallery</h1>
+  </header>
+  <main> 
+ 	 <div id="gallery">
+	   <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+	   <img src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+	   <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+	   <img src="bird4.jpg" width="200" height="150" alt="Rock Wren">
+	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle">
+	 </div>
+	 
+  </main>
+
+</section>
+<section id="practice2" class="practice-section">
+    <h2 style="color: #000; text-align: center;">Practice 8.2</h2>
+      <header>
+    <h1>Lighthouse Bistro</h1>
+  </header>
+  <div id="content">
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+   <aside>
+       <figure>
+         <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+         <figcaption>Cana Island Lighthouse</figcaption>
+	   </figure>
+   </aside>
+  <main> 
+     <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+ </main>
+
+   </div>
+     <footer>Copyright &copy; 2020     </footer>
+</section>
+<!----section practice 8.3a-->
+<section id="practice3a" class="practice-section">
+    <h2 style="color: #000;">Practice 8.3a</h2>
+     <header>
+    <h1>Grid Gallery</h1>
+  </header>
+  <main> 
+ 	 <div id="gallery">
+	   <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+	   <img src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+	   <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+	   <img src="bird4.jpg" width="200" height="150" alt="Rock Wren"> 
+	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle"> 
+	 </div>
+  </main>
+</section>
+<!----section 8.3b-->
+<section id="practice3b" class="practice-section">
+    <h2 style="color: #000;">Practice 8.3b</h2>
+      <header>
+    <h1>Grid Gallery</h1>
+  </header>
+  <main> 
+ 	 <div id="gallery">
+	   <img src="bird1.jpg" width="200" height="150" alt="Red Crested Cardinal">
+	   <img src="bird2.jpg" width="200" height="150" alt="Rose-Breasted Grosbeak">
+	   <img src="bird3.jpg" width="200" height="150" alt="Gyrfalcon">
+	   <img src="bird4.jpg" width="200" height="150" alt="Rock Wren">
+	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
+	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle">
+	 </div>
+  </main>
+</section>
+<!---section 8.4-->
+<section id="practice4" class="practice-section">
+    <h2 style="color: #000;">Practice 8.4</h2>
+    <div id="wrapper">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+  </header>
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+  <main>	
+    <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+    <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+  </main>
+    <footer>Copyright &copy; 2020
+    </footer>
+  </div>
+</section>
+<!--section 8.5a flex-->
+<section id="practice5a" class="practice-section">
+    <h2 style="color: #000;">Practice 8.5a flex</h2>
+    <header>
+  <h1>Centered Heading</h1>
+</header>
+<main>
+Additional page content and navigation go here
+</main>
+</section>
+<br>
+<!---section 8.5b grid-->
+<section id="practice5b" class="practice-section">
+    <h2 style="color: #000;">Practice 8.5b flex</h2>
+    <header>
+  <h1>Centered Heading</h1>
+</header>
+<main>
+Additional page content and navigation go here
+</main>
+</section>
+<!---section 8.5c grid-->
+<!-- <section id="practice5b" class="practice-section">
+    <h2 style="color: #000;">Practice 8.5c grid</h2>
+    <header>
+  <h1>Centered Heading</h1>
+</header>
+<main>
+Additional page content and navigation go here
+</main>
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
