@@ -25,7 +25,7 @@ h2{
     border: 1px solid #ccc;
     border-radius: 8px;
     align-items: center;
-        width: 100%;
+    width: 100%;
     background-color: #444; /* Default background for section content */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     overflow: hidden; /* Clear floats within sections */
@@ -317,21 +317,4 @@ nav.main-nav a:hover {
        font-family: Arial, Heveltica, sans-serif;
 }
 
-/* styles for practice 8.5c part three */
-/* #practice5c  { margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;    
-}
-#practice5c header {  display:grid;
-          min-height: 100vh;
-          margin: auto;
-          background-image: url(lake.jpg);
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-}
-#practice5c h1 {   margin: auto;
-	   color: #FFFFFF;
-       font-family: Arial, Heveltica, sans-serif;
-} */
 
