@@ -21,11 +21,11 @@ h2{
 .practice-section {
     padding: 20px; /* General padding for all sections */
     margin: 20px auto; /* Center sections horizontally with vertical spacing */
-    max-width: 90%; /* Max width for better readability on larger screens */
     box-sizing: border-box; /* Include padding in element's total width and height */
     border: 1px solid #ccc;
     border-radius: 8px;
     align-items: center;
+        width: 100%;
     background-color: #444; /* Default background for section content */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     overflow: hidden; /* Clear floats within sections */
@@ -120,7 +120,11 @@ nav.main-nav a:hover {
     background-color: #000;
     transform: none; /* Disable transform on hover for dropdown items */
 }
-
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -197,6 +201,7 @@ nav.main-nav a:hover {
 /* styles for pactice 8.3a */
 #practice3a { box-sizing: border-box; 
     background-color: #fefefe;
+    width: 100%;
 
 }
 #practice3a header { text-align: center; } 
