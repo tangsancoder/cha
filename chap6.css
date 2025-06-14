@@ -50,7 +50,7 @@ nav.main-nav a:hover {
     transform: translateY(-2px); /* Slight lift on hover */
 
 }
-header{
+.header{
     position: sticky;
     z-index: 1000;
     top: 0;
@@ -331,92 +331,57 @@ header{
     opacity: 0.6;
     margin-left: 40px;
 }
-#practice8 {
-    padding-top: 20px; /* Added spacing for this section */
-    box-sizing: border-box;
-}
 #practice8 #content {
     background-repeat: no-repeat;
     margin: auto; /* Center the content div */
-    width: 650px;
-    height: 489px;
-    padding: 35px;
-    display: block; /* Ensure it's a block for margin: auto to work */
-    box-sizing: border-box;
+    width: 640px;
+    height: 480px;
+    padding-top: 20px;
     /* Styles like opacity from ch6p7 or rgba color from ch6p8 are managed through the H1's color directly */
 }
 #practice8 h1 { /* This h1 is for Fall Nature Hikes */
-    color: #fff; /* Specific HSLA color with alpha from ch6p9 */
+    color: #ffffff; /* Specific HSLA color with alpha from ch6p9 */
     color: rgba(255,255,255,0.8);
-    font-family: 'Times New Roman', serif; /* Font from ch6p9 */
+    font-family: verdana,Helvetica,sans-serif; /* Font from ch6p9 */
     font-size: 5em; /* Font size from ch6p9 */
     padding-right: 10px; /* Padding from ch6p9 */
     /* Previous styles from ch6p7/8 (background-color, opacity, text-align) are implicitly overridden or handled by the more specific H1 style */
-    box-sizing: border-box;
     text-align: right;
-}
-#practice9 {
-    padding-top: 20px; /* Added spacing for this section */
-    box-sizing: border-box;
 }
 #practice9 #content {
     background-repeat: no-repeat;
     margin: auto; /* Center the content div */
-    width: 650px;
-    height: 489px;
-    padding: 35px;
-    display: block; /* Ensure it's a block for margin: auto to work */
-    box-sizing: border-box;
+    width: 640px;
+    height: 480px;
+    padding-top: 20px;
     /* Styles like opacity from ch6p7 or rgba color from ch6p8 are managed through the H1's color directly */
 }
 #practice9 h1 { /* This h1 is for Fall Nature Hikes */
-    color: #fff; /* Specific HSLA color with alpha from ch6p9 */
+    color: #ffffcc; /* Specific HSLA color with alpha from ch6p9 */
     color: hsla(60,100%,90%,0.8);
-    font-family: 'Times New Roman', serif; /* Font from ch6p9 */
+    font-family: Georgia, "Times New Roman", serif; /* Font from ch6p9 */
     font-size: 6em; /* Font size from ch6p9 */
     padding: 20px; /* Padding from ch6p9 */
     /* Previous styles from ch6p7/8 (background-color, opacity, text-align) are implicitly overridden or handled by the more specific H1 style */
-    box-sizing: border-box;
-    text-align: right;
 }
 
 /* Styles for Practice 6.10 (from ch6p10.html) */
 #practice10p1 {
-   background-color: #333;
-}
-.containn{
-     background-color: #da70d6; /* Body background color from ch6p10 applied to section */
-    background-image: linear-gradient(to bottom,#fff,#da70d6); /* Radial gradient from ch6p10 */
-    background-repeat: no-repeat;
-    padding: 20px; /* Add some padding to the section */
-    min-height: 500px; /* Ensure gradient is visible */
-    box-sizing: border-box;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+   background-color: #DA70D6;
+   background-image: linear-gradient(to bottom,#ffffff,#da70d6);
+   background-repeat: no-repeat;
 }
 #practice10p1 h1 { /* Generic h1 for this section, to differentiate from other section h1s */
     text-align: center;
-    margin-bottom: 20px;
     color: #333; /* A default color for visibility against the gradient */
 }
 #practice10p2 {
-   background-color: #333;
-}
-.contain{
-      background-color: #da70d6; /* Body background color from ch6p10 applied to section */
-    background-image: radial-gradient(#fff,#da70d6); /* Radial gradient from ch6p10 */
-    background-repeat: no-repeat;
-    padding: 20px; /* Add some padding to the section */
-    min-height: 500px; /* Ensure gradient is visible */
-    box-sizing: border-box;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+   background-color: #DA70D6;
+   background-image: radial-gradient(#ffffff,#da70d6);
+   background-repeat: no-repeat;
 }
 #practice10p2 h1 { /* Generic h1 for this section, to differentiate from other section h1s */
     text-align: center;
-    margin-bottom: 20px;
     color: #333; /* A default color for visibility against the gradient */
 }
 /* Back Button Styles */
@@ -435,13 +400,14 @@ header{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.back-button:hover {
+.back-button:hover  {
     background-color: #0056b3; /* Darker blue on hover */
     transform: translateY(-2px);
 }
 
 .back-button .fas {
     margin-right: 8px; /* Space between icon and text */
+    color: white;
 }
 
 .dropdown {
