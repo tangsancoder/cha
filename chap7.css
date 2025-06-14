@@ -15,7 +15,7 @@ p {
 }
 h2{
     text-align: center;
-    color: whitesmoke;
+    color: black;
 }
 /* General styles for all practice sections */
 .practice-section {
@@ -25,18 +25,17 @@ h2{
     box-sizing: border-box; /* Include padding in element's total width and height */
     border: 1px solid #ccc;
     border-radius: 8px;
-    align-items: center;
-    background-color: #444; /* Default background for section content */
+    /* align-items: center; */
+    color: #000;
+    background-color: #fff; /* Default background for section content */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     overflow: hidden; /* Clear floats within sections */
 }
 #practice7p1{
     width: 50%;
-    align-items: center;
 }
 #practice7p2{
     width: 50%;
-    align-items: center;
 }
 /* #practice2{
     width: 50%;
@@ -65,11 +64,11 @@ nav.main-nav a:hover {
     transform: translateY(-2px); /* Slight lift on hover */
 
 }
-header{
+/* .header{
     position: sticky;
     z-index: 1000;
     top: 0;
-}
+} */
 
 .dropdown {
     position: relative;
@@ -186,7 +185,7 @@ header{
 }
 /* <!---style for practice 3 ----> */
 #practice3 {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000066;
 }
 #practice3 nav { float: left;
       width: 150px; 
@@ -203,7 +202,6 @@ header{
        The display property is introduced in Chapter 7	 */
 	   display: block;
 	  }  
-#practice3 .cona{ background-color: #000066; }
 #wrapper { width: 80%;  
            margin-left: auto; 
            margin-right: auto;
@@ -217,8 +215,9 @@ header{
          background-color: #CCCCFF;
 		 clear: both; } 
 /* <!----style for practice 4 ----> */
-#practice4 .conta{ font-family:Verdana, Arial, sans-serif;
+#practice4{ font-family:Verdana, Arial, sans-serif;
        background-color: #00005D;
+       box-sizing: border-box;
 }
 #practice4 #wrapper { background-color: #b3c7e6; 
            color: #000066;
@@ -226,10 +225,10 @@ header{
 		   margin: auto;
            min-width:940px;
 } 
-#practice4 a{
+/* #practice4 a{
     color: blue;
 
-}
+} */
 #practice4 nav { float: left;
 	  width: 150px;
 } 
@@ -237,6 +236,7 @@ header{
          padding: 10px; }
 #practice4 nav a { text-decoration: none;
         padding: 10px;
+        color: blue;
         font-weight: bold; }
 #practice4 main { margin-left: 155px;
        background-color: #ffffff;
@@ -264,13 +264,14 @@ header{
 
 #practice4 footer { font-size:70%;
          text-align: center;
-         background-color: transparent;
+         /* background-color: transparent; */
 		 clear: right;
          padding-bottom:20px;
 }
 <!---style for practice practice5 --->
-#practice5 .for {font-family:Verdana, Arial, sans-serif;
+#practice5{font-family:Verdana, Arial, sans-serif;
       background-color: #00005D;
+      box-sizing: border-box;
 }
 #practice5 #wrapper { background-color: #b3c7e6; 
            color: #000066;
@@ -294,12 +295,10 @@ header{
 		 font-size: 1.5em;
 		 margin: 5px; 
 }
-#practice5 a{
-    color: blue;
-}
 #practice5 nav li { display: inline; }
 #practice5 nav a { text-decoration: none;
         padding-left: 10px;
+        color: blue;
 		padding-right: 10px;
 }
 #practice5 main { padding: 20px 20px 0 20px; 
@@ -319,6 +318,7 @@ header{
 /* <style practice for 7.6 */
 #practice6 {font-family:Verdana, Arial, sans-serif;
       background-color: #00005D;
+      box-sizing: border-box;
 }
 #practice6 #wrapper { background-color: #b3c7e6; 
            color: #000066;
@@ -335,7 +335,7 @@ header{
 #practice6 nav a:link { color: #FFFFFF; }
 #practice6 nav a:visited { color: #EAEAEA; }
 #practice6 nav a:hover { color: #000066;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 #practice6 main { margin-left: 155px;
                background-color: #ffffff;
@@ -365,7 +365,7 @@ header{
          text-align: center;
 		 clear: right;
          padding-bottom:20px;
-         background-color: transparent;
+         /* background-color: transparent; */
 }
 /* style for practice 7 */
 #practice7 { background-color: #00005D;
@@ -414,8 +414,8 @@ header{
 }
 
 
-/* style for practice 7.8 */
-/* #practice8  * { box-sizing: border-box; 
+/* style for practice 7.8 */ */
+#practice8{ box-sizing: border-box; 
 background-color: #00005D;
 font-family: Verdana, Arial, sans-serif; 
 }
@@ -458,39 +458,8 @@ font-family: Verdana, Arial, sans-serif;
 	   padding: 10px;
 	   background-color: #869DC7; 
 	   clear: both;
-} */
-/* <!----part two css --->?* */
-#practice8 { box-sizing: border-box;
-    background-color: #00005D;
-    font-family: Verdana, Arial, sans-serif; 
 }
-#practice8 #wrapper { margin: 0 auto; 
-           width: 80%; 
-		   min-width: 940px;
-		   background-color: #B3C7E6; 
-		  color: #000066; }
-#practice8 header { color: #000000; font-size: 20pt; }
-#practice8 nav { display: none; }
-#practice8 main { font-family: "Times New Roman", serif; font-size: 12pt; }
-#practice8 h2 { color: #869DC7;
-    font-family: Arial, sans-serif; }
-#practice8 #floatright { float: right; margin: 10px; }
 
-#practice8 nav ul { list-style-type: none; margin: 0; padding: 0; }
-#practice8 nav a { text-decoration: none; padding: 20px; display: block;
-       background-color: #B3C7E6;
-       border-bottom: 1px solid #FFFFFF; 
-}
-#practice8 nav a:link { color: #FFFFFF; }
-#practice8 nav a:visited { color: #EAEAEA; }
-#practice8 nav a:hover { color: #869DC7;
-             background-color: #EAEAEA; } 
-#practice8 footer { font-size: 70%; 
-       text-align: center;
-	   padding: 10px;
-	   background-color: #869DC7; 
-	   clear: both;
-}
 
 /* style of practice 7.9 */
 #practice9 { box-sizing: border-box;
@@ -582,6 +551,8 @@ font-family: Verdana, Arial, sans-serif;
 }
 #practice11 h2 { color: #869dc7; 
      font-family: arial, sans-serif;
+         text-align: left;
+
 }
 #practice11 nav { position: fixed; top: 0; left: 0; 
      height: 40px;
