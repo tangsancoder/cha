@@ -21,7 +21,7 @@ h2{
 .practice-section {
     padding: 20px; /* General padding for all sections */
     margin: 20px auto; /* Center sections horizontally with vertical spacing */
-    max-width: 90%; /* Max width for better readability on larger screens */
+    max-width: 100%; /* Max width for better readability on larger screens */
     box-sizing: border-box; /* Include padding in element's total width and height */
     border: 3px solid #444;
     border-radius: 8px;
@@ -58,11 +58,11 @@ nav.main-nav a:hover {
 
 }
 
-/* header{
+.header{
     position: sticky;
     z-index: 1000;
     top: 0;
-} */
+}
 
 .dropdown {
     position: relative;
@@ -136,17 +136,12 @@ nav.main-nav a:hover {
 /* styles for practice 8.6 */
 #practice6 { box-sizing: border-box;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: Verdana, Arial, sans-serif;
 }
-
-body {font-family: Verdana, Arial, sans-serif;
-}
- 
 #practice6  #wrapper { background-color:  #B3C7E6; 
 }
 
-#practice6  header { color: #00005D; 
+#practice6 header { color: #00005D; 
         background-color: #869DC7;
 		background-image: url(light.gif);
 	    background-repeat: no-repeat;		
@@ -171,7 +166,7 @@ body {font-family: Verdana, Arial, sans-serif;
          padding-left: 0; 
 		 border-top: 1px solid #EEEEEE;
 }
-#practice6  nav li { border-bottom: 1px solid #EEEEEE;  
+#practice6 nav li { border-bottom: 1px solid #EEEEEE;  
          text-align: center;
 		 padding-top: .5em;
 		 padding-bottom: .5em;
@@ -184,40 +179,34 @@ body {font-family: Verdana, Arial, sans-serif;
 /* make the current page's link look different */
 #practice6  nav #page { font-weight: bold;
             color: #FEFEFE; }
-
- 
-
-
-
 /* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
 #practice6  header, nav, main, footer, aside, figure { display: block; }
 
 /* Medium Display */
 @media (min-width: 600px) {
-#practice6  nav li { display: inline-block;
+ #practice6  nav li { display: inline-block;
           width: 7em;
           padding: 0.5em;
 		  border: none; 
          }
-#practice6  nav ul { text-align: center; }
-#practice6   main { float: left;
+ #practice6  nav ul { text-align: center; }
+ #practice6 main { float: left;
         width: 55%; }
-#practice6  aside { margin-left: 55%; }
-#practice6  footer { clear: both; }
+  #practice6 aside { margin-left: 55%; }
+ #practice6 footer { clear: both; }
  }
  
 /* Large Display */
 @media (min-width: 1024px) {
-#practice6  nav li { display: block; }
+  #practice6  nav li { display: block; }
  
-#practice6  nav { float: left; }
-  #wrapper { width: 80%;
+     #practice6  nav { float: left; }
+  #practice6  #wrapper { width: 80%;
 		     margin: auto;
 		     max-width: 1200px;
   }
- #practice6  body { background-color: #000066; }
-}
-
+  #practice6  { background-color: #000066; }
+} 
 /* styles for practice 8.7 */
 #practice7 { box-sizing: border-box;
     margin-left: auto;
