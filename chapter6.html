@@ -11,19 +11,37 @@
 </head>
 <body>
     <!-- Main navigation for jumping between practice sections -->
-<header>
-    <nav class="main-nav">
-        <a href="#practice1">Practice 6.1</a>
-        <a href="#practice2">Practice 6.2</a>
-        <a href="#practice3">Practice 6.3</a>
-        <a href="#practice4">Practice 6.4</a>
-        <a href="#practice5">Practice 6.5</a>
-        <a href="chapter6two.html" class="back-button">Next
+ <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md bg-gray-300 z-40 relative">
+    <div class="text-3xl font-bold text-black italic tracking-wide">
+      <img src="logo.png" alt="Ryan's Logo" class="h-20 w-20 md:h-16 object-contain" />
+    </div>
+    <nav class="space-x-6 text-base font-medium text-gray-800">
+      <a href="index.html" class="text-purple-600 hover:text-black">Home</a>
+      <a href="about me.html" class="hover:text-purple-600">About me</a>
+      <a href="snu.html" class="hover:text-purple-600">About SNu</a>
+      <a href="village.html" class="hover:text-purple-600">Degmada</a>
+    </nav>
+    <button 
+      onclick="window.location.href='contact.html'" 
+      class="border-2 border-purple-600 text-purple-600 px-4 py-1 rounded-full hover:bg-purple-600 hover:text-white transition">
+      Contact Me
+    </button>
+      <div class="dropdown">
+        <button class="dropdown-button">Others</button>
+        <div class="dropdown-content">
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="chapter7.html">Chapter 7</a>
+            <a href="chapter8.html">Chapter 8</a>
+            <a href="chap9.html">Chapter 9</a>
+            <a href="chap10.html">Chapter 10</a>
+        </div>
+    </div>
+  </header>
+<!----the next button-->
+     <a href="chapter6two.html" class="back-button">Next
     <i class="fas fa-arrow-right"></i> 
 </a>
-
-    </nav>
-</header>
 
     <!-- Wrapper for all practice sections to apply general layout -->
     <div class="main-content-wrapper">
