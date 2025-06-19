@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 8 two</title>
-    <!---link icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 8 two</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" href="two.css">
+    <link rel="stylesheet" href="chap8.css">
+  <link rel="icon" href="lloggo.png">
 </head>
-<body>
-    <!-- Main navigation for jumping between practice sections -->
-<header>
-    <nav class="main-nav">
-         <!-- <div class="dropdown">
-            <button class="dropbtn">Practice 7.1 <i class="fas fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a href="#practice7p1">Box 1 (first and second)</a>
-                <a href="#practice7p2">Box 2(outer and inner)</a>
-            </div>
-        </div> -->
-        <a href="#practice6">Practice 8.6</a>
-        <a href="#practice7">Practice 8.7</a>
-        <a href="#practice8">Practice 8.8</a>
-        <a href="#practice9">Practice 8.9</a>
-        <a href="#practice10">Practice 8.10</a>
+<body class="bg-gray-200 font-sans relative min-h-screen">
 
+  <!-- Small fixed logo box on left, moved lower -->
+  <div class="fixed top-28 left-6 w-24 h-24 bg-white bg-opacity-90 rounded-lg flex items-center justify-center shadow-lg z-50 overflow-hidden">
+    <img src="lloggo.png" alt="Logo" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md bg-gray-300 z-40 relative">
+    <div class="text-3xl font-bold text-black italic tracking-wide">
+      <img src="logo.png" alt="Ryan's Logo" class="h-20 w-20 md:h-16 object-contain" />
+    </div>
+    <nav class="space-x-6 text-base font-medium text-gray-800">
+      <a href="index.html" class="text-purple-600 hover:text-black">Home</a>
+      <a href="about me.html" class="hover:text-purple-600">About me</a>
+      <a href="snu.html" class="hover:text-purple-600">About SNu</a>
+      <a href="village.html" class="hover:text-purple-600">Degmada</a>
     </nav>
-</header>
+    <button 
+      onclick="window.location.href='contact.html'" 
+      class="border-2 border-purple-600 text-purple-600 px-4 py-1 rounded-full hover:bg-purple-600 hover:text-white transition">
+      Contact Me
+    </button>
+      <div class="dropdown">
+        <button class="dropdown-button">Others</button>
+        <div class="dropdown-content">
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="chapter7.html">Chapter 7</a>
+            <a href="chapter8.html">Chapter 8</a>
+            <a href="chap9.html">Chapter 9</a>
+            <a href="chap10.html">Chapter 10</a>
+        </div>
+ 
+
+    </div>
+  </header>
 <!---section 8.6 -->
 <section id="practice6" class="practice-section">
     <h2 style="color: #fff;">Practice 8.6</h2>
@@ -159,5 +177,56 @@
 <a href="chapter8.html" class="back-button" style="background-color: #000; color: #fff; border: none; border-radius: 5px; padding: 10px; margin-bottom: 10px; text-decoration: none;">
     <i class="fas fa-arrow-left"></i> Back
 </a>
+	<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #6b46c1;
+    color: #fff;
+    border: 2px solid #6b46c1;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+}
+.dropdown-button:hover{
+  background-color: transparent;
+  color: #000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.others-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+</style>
+  
 </body>
 </html>
