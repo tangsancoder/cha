@@ -43,7 +43,7 @@
             <a href="chap10.html">Chapter 10</a>
         </div>
         <!----the next button-->
-     <a href="chapter7two.html" class="back-button">Next
+     <a href="chapter7two.html" class="back-button" style="border:2px solid #000;">Next
     <i class="fas fa-arrow-right"></i> 
 </a>
     </div>
@@ -166,11 +166,62 @@
   <footer style="background-color:#b3c7e6 ;">Copyright &copy; 2020
   </footer>
 </div>
+	    
     </div>
 </section>
  <a href="index.html" class="back-button" style="background-color: #fff; color: #00005d; border: 2px solid #000; border-radius: 5px; padding: 10px; margin-bottom: 10px; text-decoration: none; ">
-    <i class="fas fa-arrow-left"></i> Back Part1
+    <i class="fas fa-arrow-left"></i> Back
 </a>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #6b46c1;
+    color: #fff;
+    border: 2px solid #6b46c1;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+}
+.dropdown-button:hover{
+  background-color: transparent;
+  color: #000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.others-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+</style>
 
 
 
