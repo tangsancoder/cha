@@ -208,3 +208,11 @@ header{
 	    margin-top: 20px; }
 #practice7 input { display: block;
         margin-bottom: 20px; }
+
+#practice8 form { display: flex;
+       flex-direction: column;
+	   width: 80%;
+	   max-width: 40em;
+}
+#practice8 input, textbox { margin-bottom: 1em; }
+#practice8 input[type="submit"] { margin-top: 1em; width: 40%;  }
