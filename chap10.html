@@ -151,54 +151,130 @@
 <a href="index.html" class="back-button" style="background-color: white; color: #000; border: 1px solid #000; border-radius: 5px; padding: 10px; margin-bottom: 10px; text-decoration: none;">
     <i class="fas fa-arrow-left"></i> Back
 </a>
-    <style>
+  <style>
+    /* Basic styles for the body */
+body {
+  background-color: #fff; /* Equivalent of bg-white */
+  font-family: sans-serif; /* Equivalent of font-sans */
+  position: relative; /* Equivalent of relative */
+  min-height: 100vh; /* Equivalent of min-h-screen */
+  margin: 0; /* Reset default body margin */
+}
+
+/* Navbar styles */
+header {
+  display: flex; /* Equivalent of flex */
+  justify-content: space-between; /* Equivalent of justify-between */
+  align-items: center; /* Equivalent of items-center */
+  padding-left: 24px; /* Roughly equivalent to px-6 */
+  padding-right: 24px; /* Roughly equivalent to px-6 */
+  padding-top: 16px; /* Roughly equivalent to py-4 */
+  padding-bottom: 16px; /* Roughly equivalent to py-4 */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Equivalent of shadow-md */
+  background-color: #e5e7eb; /* Equivalent of bg-gray-300 */
+  z-index: 40; /* Equivalent of z-40 */
+  position: relative; /* Equivalent of relative */
+}
+
+header > div:first-child {
+  font-size: 1.875rem; /* Equivalent of text-3xl */
+  font-weight: bold; /* Equivalent of font-bold */
+  color: #000; /* Equivalent of text-black */
+  font-style: italic; /* Equivalent of italic */
+  letter-spacing: 0.05em; /* Roughly equivalent to tracking-wide */
+}
+
+header > div:first-child img {
+  height: 80px; /* Equivalent of h-20 */
+  width: 80px; /* Equivalent of w-20 */
+}
+
+@media (min-width: 768px) {
+  header > div:first-child img {
+    height: 64px; /* Equivalent of md:h-16 */
+  }
+}
+
+header > div:first-child img {
+  object-fit: contain; /* Equivalent of object-contain */
+}
+
+header nav {
+  display: flex; /* Added to make the links align horizontally */
+  gap: 24px; /* Equivalent of space-x-6 */
+}
+
+header nav a {
+  font-size: 1rem; /* Equivalent of text-base */
+  font-weight: 500; /* Equivalent of font-medium */
+  color: #4a5568; /* Equivalent of text-gray-800 */
+  text-decoration: none; /* Remove default link underline */
+}
+
+header nav a:first-child {
+  color: #805ad5; /* Equivalent of text-purple-600 */
+}
+
+header nav a:hover {
+  color: #000; /* Equivalent of hover:text-black for the first link */
+  color: #805ad5; /* Equivalent of hover:text-purple-600 for other links */
+}
+
+header button {
+  border-width: 2px; /* Equivalent of border-2 */
+  border-color: #805ad5; /* Equivalent of border-purple-600 */
+  color: #805ad5; /* Equivalent of text-purple-600 */
+  padding-left: 16px; /* Equivalent of px-4 */
+  padding-right: 16px; /* Equivalent of px-4 */
+  padding-top: 8px; /* Roughly equivalent to py-1 */
+  padding-bottom: 8px; /* Roughly equivalent to py-1 */
+  border-radius: 9999px; /* Equivalent of rounded-full */
+  cursor: pointer;
+  transition-property: background-color, color; /* Equivalent of transition */
+  transition-duration: 150ms; /* Default transition duration */
+  background-color: transparent; /* Default background */
+}
+
+header button:hover {
+  background-color: #805ad5; /* Equivalent of hover:bg-purple-600 */
+  color: #fff; /* Equivalent of hover:text-white */
+}
+
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-button {
-    background-color: #6b46c1;
-    color: #fff;
-    border: 2px solid #6b46c1;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 10px;
-}
-.dropdown-button:hover{
   background-color: transparent;
-  color: #000;
+  color: #4a5568; /* Equivalent of text-gray-800 - assuming this is the default for the button */
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Equivalent of text-base */
+  font-weight: 500; /* Equivalent of font-medium */
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+.dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.others-content {
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+  display: block;
 }
 </style>
 </body>
