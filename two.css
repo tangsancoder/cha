@@ -140,7 +140,7 @@
 
 /* Medium Display */
 #practice6 @media (min-width: 600px) {
- nav li { display: inline-block;
+#practice6  nav li { display: inline-block;
           width: 7em;
           padding: 0.5em;
 		  border: none; 
@@ -154,7 +154,7 @@
  
 /* Large Display */
 #practice6 @media (min-width: 1024px) {
-  nav li { display: block; }
+ #practice6  nav li { display: block; }
  
     #practice6  nav { float: left; }
  #practice6  #wrapper { width: 80%;
