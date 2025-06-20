@@ -1,176 +1,209 @@
-/* General Body Styles: Applied globally, with specific section styles overriding where needed. */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #ccc; /* Updated: Darker background color to match the image */
-    line-height: 1.6;
-    color: #333;
-}
+    .responsive-table {
+      overflow-x: auto;
+      display: block;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
 
-/* Common Paragraph Style */
-p {
-    font-size: 1.3em;
-    margin-bottom: 1em;
-}
-h2{
-    text-align: center;
-    color: whitesmoke;
-}
-/* General styles for all practice sections */
-.practice-section {
-    padding: 20px; /* General padding for all sections */
-    width: 50%;
-    margin: 20px auto; /* Center sections horizontally with vertical spacing */
-    max-width: 90%; /* Max width for better readability on larger screens */
-    box-sizing: border-box; /* Include padding in element's total width and height */
-    border: 1px solid #000;
-    border-radius: 8px;
-    align-items: center;
-    background-color:antiquewhite; /* Default background for section content */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    overflow: hidden; /* Clear floats within sections */
-}
-/* #practice7p1{
-    width: 50%;
-    align-items: center;
-}
-#practice7p2{
-    width: 50%;
-    align-items: center;
-} */
-/* #practice2{
-    width: 50%;
-    align-items: center;
-} */
-/* Main Navigation Bar for the combined page */
-nav.main-nav {
-    background-color: #333;
-    padding: 15px 0;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-nav.main-nav a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 8px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block; /* Allows padding and margin, and proper centering */
-}
-nav.main-nav a:hover {
-    background-color: #ccc;
-    transform: translateY(-2px); /* Slight lift on hover */
+    .section-box {
+            background-color: #f1e1c2;
+          /* background-color: white; */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    
+   
+    }
 
-}
-header{
-    position: sticky;
-    z-index: 1000;
-    top: 0;
-}
+    #maida1 table {
+      text-align: center;
+      margin: auto;
+      border: 5px solid #000066;
+      width: 600px;
+      border-spacing: 0;
+    }
+    
 
-.dropdown {
-    position: relative;
-    display: inline-block; /* Allows side-by-side with other nav items */
-    margin: 0 8px; /* Match margin with other nav links */
-}
+    #maida2 table {
+      text-align: center;
+          width: 600px;
+          border: 2px solid #000;
+      margin: auto
+                  
+                  
+            
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: transparent; /* Transparent background */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1em; /* Inherit font size */
-    font-family: inherit; /* Inherit font family */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius: 5px;
-}
+    }
 
-.dropbtn:hover {
-    background-color: #555;
-    transform: translateY(-2px);
-}
+    
 
-.dropbtn .fas.fa-caret-down {
-    margin-left: 8px; /* Space between text and caret icon */
-}
+    #maida1 td, th {
+      text-align: center;
+      padding: 5px;
+      border-style: none;
+    }
 
-/* Dropdown Content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; /* Ensure it appears above other content */
-    border-radius: 5px;
-    left: 50%; /* Center dropdown content relative to its button */
-    transform: translateX(-50%); /* Adjust for perfect centering */
-    overflow: hidden; /* Ensures border-radius applies to children */
-    padding: 5px 0; /* Add some vertical padding inside dropdown */
-}
+    #maida1 caption {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding-bottom: 5px;
+    }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left; /* Align text to the left within dropdown */
-    transition: background-color 0.2s ease;
-    /* Reset styles that might be inherited from main-nav a */
-    margin: 0;
-    border-radius: 0;
-}
+    .altrow {
+      background-color: #eaeaea;
+    }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #000;
-    transform: none; /* Disable transform on hover for dropdown items */
-}
+    p:first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #F00;
+      margin-bottom: 0;
+    }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* styles for practice 9.3 */
-#practice3 table { margin: auto; 
+    #w1 table { margin: auto; 
         border: 5px solid #000066; 
 		width: 600px; 
 		border-spacing: 0;
 }
-#practice3 td, th { padding: 5px; 
+#w1 td, th { padding: 5px; 
          font-family: Arial, sans-serif;
          border-style: none; 
 }
-#practice3  caption { font-family: Verdana, sans-serif; 
+#w1 caption { font-family: Verdana, sans-serif; 
           font-weight: bold;
 		  font-size: 1.2em; 
 		  padding-bottom: 5px; 
 }
-#practice3 .altrow { background-color:#eaeaea; }
-/* styles for practice 9.4 */
+#w1 tr:nth-of-type(even) { background-color:#eaeaea; }
+#w1 tr:first-of-type { background-color: #000066;
+                   color: #eaeaea; 
+                  }
 
-#practice4 table { margin: auto; 
-        border: 5px solid #000066; 
-		width: 600px; 
-		border-spacing: 0;
-}
-#practice4 td, th { padding: 5px; 
-         font-family: Arial, sans-serif;
-         border-style: none; 
-}
-#practice4  caption { font-family: Verdana, sans-serif; 
-          font-weight: bold;
-		  font-size: 1.2em; 
-		  padding-bottom: 5px; 
-}
-#practice4 tr:nth-of-type(even){ background-color:#eaeaea; }
-#practice4 tr:first-of-type { background-color: #006;
-color: #eaeaea; }
+
+
+
+/* body {
+      background-color: #d9cbb7;
+      font-family: Georgia, serif;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: #f1e1c2;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #888;
+      padding: 30px;
+      width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    table {
+      margin: 10px auto;
+      border-collapse: collapse;
+      width: 90%;
+    }
+ 
+
+    th, td {
+      border: 1px solid black;
+      padding: 9px;
+      text-align: left;
+     
+
+      
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #f1e1c2;
+
+
+    }
+    td {
+      background-color: #f1e1c2;
+
+    }
+   
+
+
+
+
+    
+
+     body {
+      background-color: #d9cbb7;
+      font-family: Georgia, serif;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: #f1e1c2;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #888;
+      padding: 30px;
+      width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    table {
+      margin: 10px auto;
+      border-collapse: collapse;
+      width: 90%;
+    }
+ 
+
+    th, td {
+      border: 1px solid black;
+      padding: 9px;
+      text-align: left;
+     
+
+      
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #f1e1c2;
+
+
+    }
+    td {
+      background-color: #f1e1c2;
+
+    } */
